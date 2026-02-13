@@ -196,6 +196,51 @@ img {vertical-align: middle;}
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  padding: 18px 40px;
+  background: linear-gradient(90deg, #3f4c8f, #e91e63);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo img {
+  height: 45px;   /* Adjust based on your logo size */
+  width: auto;
+}
+
+/* Menu Button */
+.menu-btn {
+  width: 48px;
+  height: 48px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  width: 20px;
+  height: 3px;
+  background: #000;
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+	
 </style>
 
 
@@ -204,37 +249,21 @@ img {vertical-align: middle;}
 <body class="bg-white">
 
 
-
-
-  <header class="bg-white shadow-sm border-b">
-   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center">
-          <div class="flex-shrink-0">
-            <span class="text-2xl font-bold text-green-700">Jay Tea</span>
-          </div>
-        </div>
-        <nav class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-8">
-            <a href="#capabilities" class="text-gray-700 hover:text-green-700 px-3 py-2 text-sm font-medium">Capabilities</a>
-            <a href="#products" class="text-gray-700 hover:text-green-700 px-3 py-2 text-sm font-medium">Products</a>
-            <a href="#process" class="text-gray-700 hover:text-green-700 px-3 py-2 text-sm font-medium">Process</a>
-            <a href="#certifications" class="text-gray-700 hover:text-green-700 px-3 py-2 text-sm font-medium">Certifications</a>
-            <a href="#contact" class="text-gray-700 hover:text-green-700 px-3 py-2 text-sm font-medium">Contact</a>
-          </div>
-        </nav>
-        <div class="flex items-center">
-          <button class="bg-green-700 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-green-800 transition-colors">
-            Download Brochure
-          </button>
-        </div>
-        <div class="md:hidden">
-          <button class="text-gray-700 hover:text-green-700">
-            <i data-lucide="menu" class="h-6 w-6"></i>
-          </button>
-        </div>
-      </div>
+<header class="main-header">
+  <div class="header-container">
+    
+    <!-- Logo Image -->
+    <div class="logo">
+      <img src="logo.PNG" alt="JAY Logo">
     </div>
+
+    <!-- Menu Button -->
+    <div class="menu-btn" id="menuBtn">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
   </header>
 
   <main>
